@@ -160,6 +160,8 @@ static const uint8_t P1_0 = 43;
 static const uint8_t P4_7 = 44;
 static const uint8_t P4_5 = 45;
 static const uint8_t P4_4 = 46;
+static const uint8_t P4_6 = 47;
+
 
 static const uint8_t PUSH1 = 41;
 static const uint8_t PUSH2 = 42;
@@ -397,6 +399,7 @@ const uint8_t digital_pin_to_port[] = {
 	P4,        /* 44 */
 	P4,        /* 45 */
 	P4,        /* 46 */
+    P4,        /* 47 */
 };
 
 const uint8_t digital_pin_to_bit_mask[] = {
@@ -447,6 +450,7 @@ const uint8_t digital_pin_to_bit_mask[] = {
 	BV(7),     /* 44 */
 	BV(5),     /* 45 */
 	BV(4),     /* 46 */
+    BV(6),     /* 47 */
 };
 
 const uint32_t digital_pin_to_analog_in[] = {
@@ -490,8 +494,8 @@ const uint32_t digital_pin_to_analog_in[] = {
         NOT_ON_ADC,     /*  37 - P1.4 */
         NOT_ON_ADC,  	/*  38 - P1.5 */
         NOT_ON_ADC,		/*  39 - P2.4 */
-        NOT_ON_ADC      /*  40 - P2.5 */
+        NOT_ON_ADC,      /*  40 - P2.5 */
+        NOT_ON_ADC
 };
 #endif // #ifdef ARDUINO_MAIN
 #endif // #ifndef Pins_Energia_h
-
