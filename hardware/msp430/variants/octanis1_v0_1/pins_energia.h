@@ -160,7 +160,11 @@ static const uint8_t P1_0 = 43;
 static const uint8_t P4_7 = 44;
 static const uint8_t P4_5 = 45;
 static const uint8_t P4_4 = 46;
+
+/* Extra pins on Octanis1 */
 static const uint8_t P4_6 = 47;
+static const uint8_t P1_7 = 48;
+
 
 
 static const uint8_t PUSH1 = 41;
@@ -306,7 +310,7 @@ const uint16_t port_to_pmap[] = {
 const uint8_t digital_pin_to_timer[] = {
 	NOT_ON_TIMER, /*  dummy */
 	NOT_ON_TIMER, /*  1 - 3.3v */
-	T0B0,         /*  2 - P5.6 */
+	NOT_ON_TIMER, /*  2 - P6.5 */
 	NOT_ON_TIMER, /*  3 - P3.4 */
 	NOT_ON_TIMER, /*  4 - P3.3 */
 	NOT_ON_TIMER, /*  5 - P1.6 */
@@ -349,6 +353,10 @@ const uint8_t digital_pin_to_timer[] = {
 	NOT_ON_TIMER, /* 42 - P1.1 */
 	NOT_ON_TIMER, /* 43 - P1.0 */
 	T0B1,         /* 44 - P4.7 */
+	NOT_ON_TIMER, /* 45 - P4.5 */
+	NOT_ON_TIMER, /* 46 - P4.4 */
+	NOT_ON_TIMER, /* 47 - P4.6 */
+	T1A0,		  /* 48 - P1.7 */
 };
 
 const uint8_t digital_pin_to_port[] = {
@@ -400,6 +408,7 @@ const uint8_t digital_pin_to_port[] = {
 	P4,        /* 45 */
 	P4,        /* 46 */
     P4,        /* 47 */
+    P1,		   /* 48 */
 };
 
 const uint8_t digital_pin_to_bit_mask[] = {
@@ -451,6 +460,7 @@ const uint8_t digital_pin_to_bit_mask[] = {
 	BV(5),     /* 45 */
 	BV(4),     /* 46 */
     BV(6),     /* 47 */
+    BV(7),	   /* 48 */
 };
 
 const uint32_t digital_pin_to_analog_in[] = {
@@ -494,8 +504,15 @@ const uint32_t digital_pin_to_analog_in[] = {
         NOT_ON_ADC,     /*  37 - P1.4 */
         NOT_ON_ADC,  	/*  38 - P1.5 */
         NOT_ON_ADC,		/*  39 - P2.4 */
-        NOT_ON_ADC,      /*  40 - P2.5 */
-        NOT_ON_ADC
+        NOT_ON_ADC,     /*  40 - P2.5 */
+        NOT_ON_ADC,		/*  41 - P2.1 */
+		NOT_ON_ADC,		/*  42 - P1.1 */
+		NOT_ON_ADC, 	/*  43 - P1.0 */
+		NOT_ON_ADC, 	/*  44 - P4.7 */
+		NOT_ON_ADC, 	/*  45 - P4.5 */
+		NOT_ON_ADC, 	/*  46 - P4.4 */
+		NOT_ON_ADC, 	/*  47 - P4.6 */
+		NOT_ON_ADC, 	/*  48 - P1.7 */
 };
 #endif // #ifdef ARDUINO_MAIN
 #endif // #ifndef Pins_Energia_h

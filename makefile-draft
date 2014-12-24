@@ -1,0 +1,5 @@
+
+ln -s ~/Desktop/Octanis/Octanis1-Energia/hardware/msp430/boards.txt /Applications/Energia.app/Contents/Resources/Java/hardware/msp430  
+ln -s ~/Desktop/Octanis/Octanis1-Energia/hardware/msp430/variants/octanis1_v0_1 /Applications/Energia.app/Contents/Resources/Java/hardware/msp430/variants
+ln -s ~/Desktop/Octanis/Octanis1-Energia/sandbox /Applications/Energia.app/Contents/Resources/Java/examples 
+
