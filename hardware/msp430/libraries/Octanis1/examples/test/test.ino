@@ -1,4 +1,4 @@
-#include <Octanis.h>
+#include <Octanis1.h>
 
 const int ledPin =  P4_6;      // the number of the LED pin
 const int ledGnd = P4_7;       //the minus pole of led
