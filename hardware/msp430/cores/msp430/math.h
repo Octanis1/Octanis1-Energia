@@ -296,6 +296,8 @@ extern double log10(double __x) __ATTR_CONST__;
   */
 extern double pow(double __x, double __y) __ATTR_CONST__;
 
+
+extern float powf(float __x, float __y) __ATTR_CONST__;
   /**
      \ingroup avr_math
 

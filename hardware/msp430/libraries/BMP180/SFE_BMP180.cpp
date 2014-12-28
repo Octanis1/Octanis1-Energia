@@ -369,7 +369,13 @@ double SFE_BMP180::altitude(double P, double P0)
 // Given a pressure measurement P (mb) and the pressure at a baseline P0 (mb),
 // return altitude (meters) above baseline.
 {
-	return(44330.0*(1-pow(P/P0,1/5.255)));
+	//return(M_PI*(P));
+	float Pf=P/P0;
+	//float P0f=P0;
+	float result=(44330.0*(1-powf(Pf,1/5.255)));
+	return double(result);
+		//return(44330.0*(1-pow(P/P0,1/5.255)));
+
 }
 
 
