@@ -164,6 +164,7 @@ static const uint8_t P4_4 = 46;
 /* Extra pins on Octanis1 */
 static const uint8_t P4_6 = 47;
 static const uint8_t P1_7 = 48;
+static const uint8_t P8_0 = 49;
 
 
 
@@ -409,6 +410,7 @@ const uint8_t digital_pin_to_port[] = {
 	P4,        /* 46 */
     P4,        /* 47 */
     P1,		   /* 48 */
+    P8,		   /* 49 */
 };
 
 const uint8_t digital_pin_to_bit_mask[] = {
@@ -461,6 +463,7 @@ const uint8_t digital_pin_to_bit_mask[] = {
 	BV(4),     /* 46 */
     BV(6),     /* 47 */
     BV(7),	   /* 48 */
+    BV(0),	   /* 49 */
 };
 
 const uint32_t digital_pin_to_analog_in[] = {
